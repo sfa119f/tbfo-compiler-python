@@ -2,8 +2,8 @@ S -> IMPORT | DEF | CLASS | MAIN
 IMPORT -> FROM import namamethod AS IMPORT | import namamethod AS IMPORT | import namamethod IMPORT | FROM import namamethod AS DEF | import namamethod AS DEF | import namamethod DEF | DEF
 FROM -> from namafile
 AS -> as kependekan
-DEF -> DEF_FUNGSI | DEF_PARAMETER
-DEF_PARAMETER -> def namafungsi ( PARAMETER ) : ISI_PROSEDUR DEF | def namafungsi ( PARAMETER ) : ISI_PROSEDUR CLASS | def namafungsi ( PARAMETER ) : ISI_PROSEDUR MAIN
+DEF -> DEF_FUNGSI | DEF_PROSEDUR
+DEF_PROSEDUR -> def namaprosedur ( PARAMETER ) : ISI_PROSEDUR DEF | def namaprosedur ( PARAMETER ) : ISI_PROSEDUR CLASS | def namaprosedur ( PARAMETER ) : ISI_PROSEDUR MAIN
 DEF_FUNGSI -> def namafungsi ( PARAMETER ) - > TYPE : ISI_FUNGSI DEF | def namafungsi ( PARAMETER ) - > TYPE : ISI_FUNGSI CLASS | def namafungsi ( PARAMETER ) - > TYPE : ISI_FUNGSI MAIN
 PARAMETER -> TYPE VAR_NAME , PARAMETER | TYPE VAR_NAME
 ISI_PROSEDUR -> MAIN
