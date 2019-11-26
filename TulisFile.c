@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void CetakTokenList(){
+void CetakTokenList(){ //mencetak token list
     FILE *fTkn;
     fTkn = fopen("TokenList.csv", "w");
     fprintf(fTkn, " Token ; Simbol/Terminal\n");
@@ -11,7 +11,7 @@ void CetakTokenList(){
     fclose(fTkn);
 }
 
-void CetakCYKTab(){
+void CetakCYKTab(){ //mencetak tabel CYK
     FILE *fCYK;
     fCYK = fopen("CYK_Tab.csv", "w");
     for(int i=0; i<nTab; i++){

@@ -3,7 +3,9 @@
 #include <ctype.h>
 #include "boolean.h"
 
-int TknCek(char str[STR_SIZE]){ //Mengembalikan token dari str[] yang ada di arraySimTerm. Jika tidak ada, maka mengembalikan -1
+int TknCek(char str[STR_SIZE]){ //Mengembalikan token dari str[] yang ada di arraySimTerm. 
+//Jika tidak ada, maka mengembalikan -1
+
     int i=0;
     boolean temp=false;
     while(i<nSimTerm && !temp){
@@ -14,7 +16,7 @@ int TknCek(char str[STR_SIZE]){ //Mengembalikan token dari str[] yang ada di arr
     else return -1;
 }
 
-void ParsInput(char z[STR_SIZE], int brs){
+void ParsInput(char z[STR_SIZE], int brs){ //memisah string panjang menjadi array of token
     char *tkn, simbol[1], str[STR_SIZE];
 
     tkn = strtok(z, " ");
