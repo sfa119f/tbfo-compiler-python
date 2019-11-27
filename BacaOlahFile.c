@@ -55,8 +55,8 @@ void ParsInput(char z[STR_SIZE], int brs){ //memisah string panjang menjadi arra
                     }
                     else{
                         if(TknCek(str) == -1){ //string kata
-                            strcpy(parsingIn[brs][idx], "KATA");
-                            tokenIn[brs][idx] = TknCek("KATA"); 
+                            strcpy(parsingIn[brs][idx], "kata");
+                            tokenIn[brs][idx] = TknCek("kata"); 
                         }
                         else{ //string key  
                             strcpy(parsingIn[brs][idx], str);
@@ -73,7 +73,7 @@ void ParsInput(char z[STR_SIZE], int brs){ //memisah string panjang menjadi arra
     tokenIn[brs][0]=idx; //jumlah kolom pd brs tsb
 }
 
-void CNFPars(char z[STR_SIZE], int brs){
+void CNFPars(char z[STR_SIZE], int brs){ //parsing CNF menjadi token
     char *tkn, str[STR_SIZE], temp[STR_SIZE];
 
     tkn=strtok(z, " ");

@@ -1,0 +1,2 @@
+class abc:
+    x=x+1
